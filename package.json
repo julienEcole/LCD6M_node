@@ -1,0 +1,23 @@
+{
+  "name": "lcd6m_node",
+  "version": "1.0.0",
+  "description": "\"projet de la LCD6M\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julienEcole/LCD6M_node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julienEcole/LCD6M_node/issues"
+  },
+  "homepage": "https://github.com/julienEcole/LCD6M_node#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}
