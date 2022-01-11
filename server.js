@@ -1,7 +1,7 @@
 const http = require('http');
 const app = require('./index');
 
-const normalizePort = val => {
+const normalizePort = val => {  //cette fonction va récupérer un port valide
     const port = parseInt(val, 10);
   
     if (isNaN(port)) {

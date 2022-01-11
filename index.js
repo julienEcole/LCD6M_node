@@ -1,5 +1,23 @@
 const express = require('express');
+//---------------------------------------------------------------------------------------------------
+//partie mysql connexion, peut être a changer (l'histoire que ce soit pas trop facile de casser le site)
+const mysql = require("mysql");
 
+console.log('construction de la route...');
+
+var conn = mysql.createConnection({ //les attributs de cinnexion a changer quand BDD prête
+    database: 'LCD6M',
+    host: "localhost",
+    user: "root",
+    password: ""
+});
+
+conn.connect(function(err,next) {    //on tente de se connecter, si C le cas alors C bon
+    if (err) throw err;
+    console.log("Route construite !");
+    next();});
+//faire ainsi peut provoquer une erreur, je testerai + tard avec une BDD improvisé, si C le cas yauras des manip a faire
+//----------------------------------------------------------------------------------------------
 const app = express();
 
 app.use((req,res,next) => {
